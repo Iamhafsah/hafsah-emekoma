@@ -17,8 +17,6 @@ let mailMe = document.querySelector('.mail-me');
 let footerLine = document.querySelector('.footer-line');
 let readMore = document.querySelectorAll('.articles-wrapper .read-more');
 
-
-
 let date = new Date();
 year.innerHTML = date.getFullYear();
 
@@ -117,7 +115,7 @@ function showLight(){
     // for project image container
     for (let card = 0; card < projectCards.length; card++) {
         projectCards[card].style.border = 'none';
-        projectCards[card].style.boxShadow = '2px 1px 8px 3px rgb(176, 176, 240)';
+        projectCards[card].style.boxShadow = '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)';
     }
 
     // for project images
@@ -133,12 +131,12 @@ function showLight(){
     // articles box
     for (let read = 0; read < readMore.length; read++) {
         readMore[read].style.border = 'none';
-        readMore[read].style.boxShadow ='2px 1px 8px 3px rgb(176, 176, 240)';
+        readMore[read].style.boxShadow ='0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)';
     }
     // for tool box styling
     for (let box = 0; box < toolBoxDiv.length; box++) {
         toolBoxDiv[box].style.border = 'none';
-        toolBoxDiv[box].style.boxShadow ='2px 1px 8px 3px rgb(176, 176, 240)';
+        toolBoxDiv[box].style.boxShadow ='0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)';
     }
 
     // for tool box image styling
@@ -149,7 +147,7 @@ function showLight(){
     // contact section
     for (let info = 0; info < contact.length; info++) {
         contact[info].style.border = 'none';
-        contact[info].style.boxShadow = '2px 1px 8px 3px rgb(176, 176, 240)';
+        contact[info].style.boxShadow ='0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)';
     }
 
     // other element colors
@@ -163,7 +161,7 @@ function showLight(){
     body.style.color =   '#1E223F';
     nameIntro.style.backgroundImage = "url('/img/dark-sparkle.jpg')";    
     mailMe.style.border = 'none';
-    mailMe.style.boxShadow = '2px 1px 8px 3px rgb(176, 176, 240)';
+    mailMe.style.boxShadow = '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)';
     footerLine.style.backgroundColor = '#1E223F';
 
 }
