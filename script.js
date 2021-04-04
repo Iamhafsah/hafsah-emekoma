@@ -112,10 +112,12 @@ function showLight(){
 
     }
 
+    let boxShadow = ' 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)'
+
     // for project image container
     for (let card = 0; card < projectCards.length; card++) {
         projectCards[card].style.border = 'none';
-        projectCards[card].style.boxShadow = '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)';
+        projectCards[card].style.boxShadow = boxShadow
     }
 
     // for project images
@@ -131,12 +133,12 @@ function showLight(){
     // articles box
     for (let read = 0; read < readMore.length; read++) {
         readMore[read].style.border = 'none';
-        readMore[read].style.boxShadow ='0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)';
+        readMore[read].style.boxShadow =boxShadow
     }
     // for tool box styling
     for (let box = 0; box < toolBoxDiv.length; box++) {
         toolBoxDiv[box].style.border = 'none';
-        toolBoxDiv[box].style.boxShadow ='0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)';
+        toolBoxDiv[box].style.boxShadow = boxShadow
     }
 
     // for tool box image styling
@@ -147,7 +149,7 @@ function showLight(){
     // contact section
     for (let info = 0; info < contact.length; info++) {
         contact[info].style.border = 'none';
-        contact[info].style.boxShadow ='0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)';
+        contact[info].style.boxShadow =boxShadow
     }
 
     // other element colors
@@ -161,7 +163,7 @@ function showLight(){
     body.style.color =   '#1E223F';
     nameIntro.style.backgroundImage = "url('/img/dark-sparkle.jpg')";    
     mailMe.style.border = 'none';
-    mailMe.style.boxShadow = '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)';
+    mailMe.style.boxShadow = boxShadow
     footerLine.style.backgroundColor = '#1E223F';
 
 }
