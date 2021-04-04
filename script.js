@@ -118,6 +118,14 @@ function showLight(){
     for (let card = 0; card < projectCards.length; card++) {
         projectCards[card].style.border = 'none';
         projectCards[card].style.boxShadow = boxShadow
+        projectCards[card].addEventListener("mouseover", function(){
+            projectCards[card].style.boxShadow =  '0 10px 20px rgba(0,0,0,0.15)'
+            projectCards[card].transform=  'scale(1.05)'
+        })
+        projectCards[card].addEventListener("mouseleave", function(){
+            projectCards[card].style.boxShadow =  boxShadow
+            projectCards[card].transform=  'scale(1)'
+        })
     }
 
     // for project images
@@ -139,6 +147,14 @@ function showLight(){
     for (let box = 0; box < toolBoxDiv.length; box++) {
         toolBoxDiv[box].style.border = 'none';
         toolBoxDiv[box].style.boxShadow = boxShadow
+        toolBoxDiv[box].addEventListener("mouseover", function(){
+            toolBoxDiv[box].style.boxShadow =  '0 10px 20px rgba(0,0,0,0.15)'
+            toolBoxDiv[box].transform=  'scale(1.05)'
+        })
+        toolBoxDiv[box].addEventListener("mouseleave", function(){
+            toolBoxDiv[box].style.boxShadow =  boxShadow
+            toolBoxDiv[box].transform=  'scale(1)'
+        })
     }
 
     // for tool box image styling
@@ -150,6 +166,14 @@ function showLight(){
     for (let info = 0; info < contact.length; info++) {
         contact[info].style.border = 'none';
         contact[info].style.boxShadow =boxShadow
+        contact[info].addEventListener("mouseover", function(){
+            contact[info].style.boxShadow =  '0 10px 20px rgba(0,0,0,0.15)'
+            contact[info].transform=  'scale(1.05)'
+        })
+        contact[info].addEventListener("mouseleave", function(){
+            contact[info].style.boxShadow =  boxShadow
+            contact[info].transform=  'scale(1)'
+        })
     }
 
     // other element colors
